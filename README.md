@@ -66,6 +66,7 @@ A personal reference for platforms where I can showcase my skills and get paid a
 | Management System (POS, Inventory, etc.) | DM for quote |
 | AI Agents & Chatbots | ₱20,000 – ₱50,000 |
 | Capstone / Thesis System | ₱5,000 – ₱10,000 |
+| Google Apps Script Automation | DM for quote |
 
 ---
 
@@ -73,7 +74,8 @@ A personal reference for platforms where I can showcase my skills and get paid a
 
 ```
 Make Money Websites/
-├── README.md               ← You are here
-└── UPSKILL/
-    └── upwork-profile-guide.md   ← Upwork setup notes
+├── README.md                        ← You are here
+├── UPSKILL/
+│   ├── upwork-profile-guide.md      ← Upwork setup notes
+│   └── my_skills.md                 ← Full skills reference
 ```
