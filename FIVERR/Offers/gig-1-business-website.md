@@ -9,11 +9,11 @@
 **Description:** `Professional landing page with all sections, already deployed on your domain.` (77 chars)
 
 Delivery: 3 days
-Pages: 5
+Pages: 3
 Revisions: 2
 ✅ Speed optimization
 ✅ Social media icons
-✅ Opt-in form
+✅ Hosting setup
 
 ---
 
@@ -21,12 +21,11 @@ Revisions: 2
 **Name:** `Business Website + Full SEO`
 **Description:** `Landing page + full SEO setup, already deployed on your domain. Built to rank.` (80 chars)
 
-Delivery: 3 days
-Pages: 5
-Revisions: 3
+Delivery: 7 days
+Pages: 3
+Revisions: 7
 ✅ Speed optimization
 ✅ Social media icons
-✅ Opt-in form
 ✅ Hosting setup
 
 ---
@@ -36,14 +35,29 @@ Revisions: 3
 **Description:** `Landing page + SEO + admin dashboard + Blog CMS, already deployed on your domain.` (82 chars)
 
 Delivery: 14 days
-Pages: 7+
-Revisions: 5
+Pages: 10
+Revisions: Unlimited
 ✅ Speed optimization
 ✅ Social media icons
-✅ Opt-in form
 ✅ Hosting setup
 ✅ Admin Panel / Dashboard
 ✅ User Authentication
+
+---
+
+## Gig Extras
+
+| Extra | Price | Delivery |
+|---|---|---|
+| Extra fast delivery (Basic) | +$40 | 1 day |
+| Extra fast delivery (Standard) | +$75 | 3 days |
+| Extra fast delivery (Premium) | +$150 | 7 days |
+| Additional page | +$10 | +1 day |
+| Additional revision | +$10 | +2 days |
+| Content upload | +$75 | +3 days |
+| E-commerce functionality | +$150 | +7 days |
+| Payment Integration (Stripe/PayMongo) | +$150 | +7 days |
+| Autoresponder integration | +$100 | +7 days |
 
 ---
 
