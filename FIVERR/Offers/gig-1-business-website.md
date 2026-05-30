@@ -112,6 +112,19 @@ Revisions cover content and design changes — text, colors, images, layout twea
 
 ---
 
+## Requirements (Step 4)
+
+Fiverr's 2 default questions — leave as is.
+
+**Q1** (Free text) — What is your business name and what does your business do?
+**Q2** (Attachment) — Please upload your logo here. (PNG or SVG preferred)
+**Q3** (Free text) — What are your brand colors? Share hex codes or describe the style (e.g. "dark and professional", "bright and modern").
+**Q4** (Free text) — Do you already have a domain name? If yes, what is it? If no, I will register one for you via Hostinger for less than $20.
+**Q5** (Free text) — Please share any content for the site — services, about text, photos, pricing, etc. (You can send as files or text.)
+**Q6** (Free text) — Is there a website you like the look of? Share a link for reference.
+
+---
+
 ## Domain Name Policy
 
 - Client has domain → connect it for free
