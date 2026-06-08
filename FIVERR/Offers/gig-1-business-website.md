@@ -32,7 +32,7 @@ Revisions: 7
 
 ## PREMIUM — $250
 **Name:** `Full Business Suite + Blog`
-**Description:** `Landing page + SEO + admin dashboard + Blog CMS, already deployed on your domain.` (82 chars)
+**Description:** `Landing page + SEO + full business dashboard — bookings, POS, analytics, blog & pricing control.` (97 chars)
 
 Delivery: 14 days
 Pages: 10
@@ -42,6 +42,11 @@ Revisions: Unlimited
 ✅ Hosting setup
 ✅ Admin Panel / Dashboard
 ✅ User Authentication
+✅ Booking system
+✅ POS / sales tracking
+✅ Analytics dashboard
+✅ Blog CMS with SEO
+✅ Full control of services & pricing
 
 ---
 
@@ -79,7 +84,7 @@ Here's what you get:
 
 Upgrade for more:
 🔍 Standard — Full SEO setup so Google finds you
-⚙️ Premium — Admin dashboard + Blog so you run your site like a pro, no coding needed
+⚙️ Premium — Full business dashboard: bookings, POS/sales tracking, analytics, blog, and full control of your services & prices — run your whole business from one place, no coding needed
 
 Need AI features? I integrate OpenAI APIs — chatbots, automation, smart tools.
 
@@ -109,6 +114,9 @@ Yes! I integrate OpenAI APIs — chatbots, smart search, and automation tools. M
 
 **Q5: What counts as a revision?**
 Revisions cover content and design changes — text, colors, images, layout tweaks. Adding entirely new features or pages counts as a new order.
+
+**Q6: What's included in the Premium admin dashboard?**
+A full business management system — track bookings and record sales (POS), view analytics and performance trends, manage leads, write blog posts with SEO controls, and update your services and prices anytime. No coding needed, all from one dashboard you log into.
 
 ---
 
