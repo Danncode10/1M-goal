@@ -8,7 +8,7 @@
 **Name:** `Professional Business Website`
 **Description:** `Professional landing page with all sections, already deployed on your domain.` (77 chars)
 
-Delivery: 3 days
+Delivery: 7 days
 Pages: 3
 Revisions: 2
 ✅ Speed optimization
@@ -21,7 +21,7 @@ Revisions: 2
 **Name:** `Business Website + Full SEO`
 **Description:** `Landing page + full SEO setup, already deployed on your domain. Built to rank.` (80 chars)
 
-Delivery: 7 days
+Delivery: 14 days
 Pages: 3
 Revisions: 7
 ✅ Speed optimization
