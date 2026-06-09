@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 800px;
+    height: 800px;
+    background: #020817;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  /* Background glow */
+  .bg {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse 80% 80% at 50% 45%, #0d1f4a 0%, #020817 70%);
+  }
+
+  /* Grid */
+  .grid {
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(0,102,255,0.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,102,255,0.06) 1px, transparent 1px);
+    background-size: 50px 50px;
+  }
+
+  /* Center glow blob */
+  .glow {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+    background: radial-gradient(ellipse, rgba(0,102,255,0.2) 0%, transparent 65%);
+    filter: blur(30px);
+  }
+
+  /* Corner brackets */
+  .corner {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+  }
+  .corner.tl { top: 16px; left: 16px; border-top: 2px solid rgba(0,102,255,0.6); border-left: 2px solid rgba(0,102,255,0.6); }
+  .corner.tr { top: 16px; right: 16px; border-top: 2px solid rgba(0,102,255,0.6); border-right: 2px solid rgba(0,102,255,0.6); }
+  .corner.bl { bottom: 16px; left: 16px; border-bottom: 2px solid rgba(0,102,255,0.6); border-left: 2px solid rgba(0,102,255,0.6); }
+  .corner.br { bottom: 16px; right: 16px; border-bottom: 2px solid rgba(0,102,255,0.6); border-right: 2px solid rgba(0,102,255,0.6); }
+
+  /* Horizontal lines */
+  .line {
+    position: absolute;
+    left: 60px;
+    right: 60px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(0,194,255,0.4) 30%, rgba(0,194,255,0.4) 70%, transparent);
+  }
+  .line.top { top: 60px; }
+  .line.bottom { bottom: 60px; }
+
+  /* Main icon area */
+  .icon-wrap {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+  }
+
+  /* The <Dd> badge */
+  .badge {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+  }
+
+  .bracket {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 160px;
+    font-weight: 900;
+    color: #1e7aff;
+    line-height: 1;
+    text-shadow:
+      0 0 20px rgba(0,102,255,1),
+      0 0 50px rgba(0,102,255,0.7),
+      0 0 100px rgba(0,102,255,0.4);
+  }
+
+  .letters {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 160px;
+    font-weight: 900;
+    color: #ffffff;
+    line-height: 1;
+    letter-spacing: -6px;
+    text-shadow:
+      0 0 30px rgba(255,255,255,0.5),
+      0 0 60px rgba(255,255,255,0.2);
+  }
+
+  /* Dann digital wordmark */
+  .wordmark {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 58px;
+    font-weight: 900;
+    color: #ffffff;
+    letter-spacing: 2px;
+    text-shadow:
+      0 0 20px rgba(0,102,255,0.8),
+      0 0 40px rgba(0,102,255,0.4);
+    position: relative;
+    z-index: 2;
+  }
+
+  .wordmark span {
+    color: #1e7aff;
+    text-shadow:
+      0 0 20px rgba(0,102,255,1),
+      0 0 40px rgba(0,102,255,0.6);
+  }
+
+  /* Tagline */
+  .tagline {
+    font-family: 'Courier New', monospace;
+    font-size: 15px;
+    color: rgba(0,194,255,0.8);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2;
+  }
+
+  /* Particles */
+  .particle {
+    position: absolute;
+    border-radius: 50%;
+    background: #00c2ff;
+    box-shadow: 0 0 6px #00c2ff;
+  }
+</style>
+</head>
+<body>
+  <div class="bg"></div>
+  <div class="grid"></div>
+  <div class="glow"></div>
+
+  <div class="corner tl"></div>
+  <div class="corner tr"></div>
+  <div class="corner bl"></div>
+  <div class="corner br"></div>
+  <div class="line top"></div>
+  <div class="line bottom"></div>
+
+  <!-- Particles -->
+  <div class="particle" style="width:4px;height:4px;top:100px;left:120px;opacity:0.7"></div>
+  <div class="particle" style="width:3px;height:3px;top:200px;right:140px;opacity:0.5"></div>
+  <div class="particle" style="width:5px;height:5px;bottom:180px;left:100px;opacity:0.6"></div>
+  <div class="particle" style="width:3px;height:3px;bottom:120px;right:160px;opacity:0.8"></div>
+  <div class="particle" style="width:2px;height:2px;top:350px;left:60px;opacity:0.4"></div>
+  <div class="particle" style="width:4px;height:4px;top:140px;right:200px;opacity:0.5"></div>
+
+  <div class="icon-wrap">
+    <div class="badge">
+      <span class="bracket">&lt;</span>
+      <span class="letters">Dd</span>
+      <span class="bracket">&gt;</span>
+    </div>
+    <div class="wordmark">Dann <span>digital</span></div>
+    <div class="tagline">Web · SEO · Growth</div>
+  </div>
+</body>
+</html>
