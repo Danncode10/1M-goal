@@ -8,126 +8,342 @@
   body {
     width: 1640px;
     height: 624px;
-    background-color: #0A1628;
+    background: #020817;
     font-family: 'Courier New', monospace;
     overflow: hidden;
     position: relative;
   }
 
-  /* Grid dots background */
+  /* Deep space gradient base */
+  .bg {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 80% 60% at 50% 50%, #0d1f4a 0%, #020817 70%);
+  }
+
+  /* Neon glow blob behind text */
+  .glow-center {
+    position: absolute;
+    width: 900px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(ellipse, rgba(0, 102, 255, 0.18) 0%, transparent 70%);
+    filter: blur(40px);
+  }
+
+  .glow-left {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: -100px;
+    left: -100px;
+    background: radial-gradient(ellipse, rgba(0, 194, 255, 0.12) 0%, transparent 70%);
+    filter: blur(60px);
+  }
+
+  .glow-right {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    bottom: -100px;
+    right: -100px;
+    background: radial-gradient(ellipse, rgba(120, 0, 255, 0.1) 0%, transparent 70%);
+    filter: blur(60px);
+  }
+
+  /* Grid lines */
   .grid {
     position: absolute;
     inset: 0;
     background-image:
-      radial-gradient(circle, #1e3a5f 1px, transparent 1px);
-    background-size: 40px 40px;
-    opacity: 0.4;
+      linear-gradient(rgba(0, 102, 255, 0.07) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 102, 255, 0.07) 1px, transparent 1px);
+    background-size: 60px 60px;
   }
 
-  /* Code snippets background */
-  .code {
+  /* Perspective grid bottom */
+  .grid-floor {
     position: absolute;
-    color: #1e4a8a;
-    font-size: 13px;
-    line-height: 1.8;
-    opacity: 0.6;
-    user-select: none;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 200px;
+    background-image:
+      linear-gradient(rgba(0,102,255,0.15) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,102,255,0.08) 1px, transparent 1px);
+    background-size: 80px 40px;
+    transform: perspective(300px) rotateX(40deg);
+    transform-origin: bottom;
+    opacity: 0.5;
   }
-  .code.top-left { top: 30px; left: 60px; }
-  .code.top-right { top: 20px; right: 80px; }
-  .code.bottom-left { bottom: 40px; left: 60px; }
-  .code.bottom-right { bottom: 50px; right: 120px; }
 
-  /* Icons */
-  .icon {
+  /* Scanning line */
+  .scanline {
     position: absolute;
-    color: #1e6fd4;
-    font-size: 32px;
-    opacity: 0.8;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgba(0,194,255,0.6), transparent);
+    top: 35%;
+    filter: blur(1px);
   }
-  .icon.left { top: 50%; left: 80px; transform: translateY(-50%); }
-  .icon.right { top: 50%; right: 90px; transform: translateY(-50%); }
+
+  /* Horizontal accent lines */
+  .line-top {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent 5%, rgba(0,102,255,0.4) 30%, rgba(0,194,255,0.8) 50%, rgba(0,102,255,0.4) 70%, transparent 95%);
+  }
+  .line-bottom {
+    position: absolute;
+    bottom: 80px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent 5%, rgba(0,102,255,0.4) 30%, rgba(0,194,255,0.8) 50%, rgba(0,102,255,0.4) 70%, transparent 95%);
+  }
+
+  /* Corner brackets */
+  .corner {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+  }
+  .corner.tl { top: 20px; left: 20px; border-top: 2px solid #0066ff; border-left: 2px solid #0066ff; }
+  .corner.tr { top: 20px; right: 20px; border-top: 2px solid #0066ff; border-right: 2px solid #0066ff; }
+  .corner.bl { bottom: 20px; left: 20px; border-bottom: 2px solid #0066ff; border-left: 2px solid #0066ff; }
+  .corner.br { bottom: 20px; right: 20px; border-bottom: 2px solid #0066ff; border-right: 2px solid #0066ff; }
+
+  /* Floating data panels */
+  .panel {
+    position: absolute;
+    border: 1px solid rgba(0, 102, 255, 0.3);
+    background: rgba(0, 20, 60, 0.5);
+    padding: 10px 14px;
+    font-size: 11px;
+    color: rgba(0, 194, 255, 0.7);
+    line-height: 1.7;
+    backdrop-filter: blur(4px);
+  }
+  .panel.p1 { top: 100px; left: 50px; }
+  .panel.p2 { top: 100px; right: 50px; text-align: right; }
+  .panel.p3 { bottom: 100px; left: 50px; }
+  .panel.p4 { bottom: 100px; right: 50px; text-align: right; }
+
+  .panel .label {
+    color: rgba(0,102,255,0.5);
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 2px;
+  }
+
+  /* Dot indicators */
+  .dot {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #00c2ff;
+    margin-right: 6px;
+    box-shadow: 0 0 6px #00c2ff;
+  }
+
+  /* Side circuit lines */
+  .circuit-left {
+    position: absolute;
+    left: 260px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 120px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgba(0,194,255,0.6));
+  }
+  .circuit-left::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: -20px;
+    width: 2px;
+    height: 42px;
+    background: rgba(0,194,255,0.6);
+  }
+  .circuit-left::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: -20px;
+    width: 20px;
+    height: 2px;
+    background: rgba(0,194,255,0.6);
+  }
+
+  .circuit-right {
+    position: absolute;
+    right: 260px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 120px;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, rgba(0,194,255,0.6));
+  }
+  .circuit-right::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -20px;
+    width: 2px;
+    height: 42px;
+    background: rgba(0,194,255,0.6);
+  }
+  .circuit-right::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -20px;
+    width: 20px;
+    height: 2px;
+    background: rgba(0,194,255,0.6);
+  }
+
+  /* Floating particles */
+  .particle {
+    position: absolute;
+    border-radius: 50%;
+    background: #00c2ff;
+    box-shadow: 0 0 8px #00c2ff;
+  }
 
   /* Main logo */
   .center {
     position: absolute;
     inset: 0;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 12px;
   }
 
   .logo {
     display: flex;
     align-items: center;
     gap: 0;
+    filter: drop-shadow(0 0 30px rgba(0, 102, 255, 0.5));
   }
 
   .bracket {
-    color: #1e6fd4;
-    font-size: 96px;
+    color: #1e7aff;
+    font-size: 100px;
     font-weight: 900;
     font-family: 'Arial Black', sans-serif;
     line-height: 1;
+    text-shadow:
+      0 0 20px rgba(0, 102, 255, 0.8),
+      0 0 40px rgba(0, 102, 255, 0.4);
   }
 
   .brand {
-    font-size: 88px;
+    font-size: 92px;
     font-weight: 900;
     font-family: 'Arial Black', 'Impact', sans-serif;
     color: #ffffff;
     letter-spacing: -2px;
     line-height: 1;
-    padding: 0 8px;
+    padding: 0 10px;
+    text-shadow:
+      0 0 40px rgba(255, 255, 255, 0.3),
+      0 2px 0 rgba(0,0,0,0.5);
   }
 
-  /* Diamond sparkle */
-  .sparkle {
+  /* Tagline */
+  .tagline {
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    color: rgba(0, 194, 255, 0.7);
+    letter-spacing: 6px;
+    text-transform: uppercase;
+  }
+
+  /* Status bar */
+  .status {
     position: absolute;
-    bottom: 30px;
-    right: 40px;
-    color: #ffffff;
-    font-size: 20px;
-    opacity: 0.7;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 24px;
+    font-size: 10px;
+    color: rgba(0,102,255,0.5);
+    letter-spacing: 3px;
+    text-transform: uppercase;
   }
 </style>
 </head>
 <body>
+  <div class="bg"></div>
+  <div class="glow-left"></div>
+  <div class="glow-right"></div>
+  <div class="glow-center"></div>
   <div class="grid"></div>
+  <div class="grid-floor"></div>
 
-  <!-- Background code snippets -->
-  <div class="code top-left">
-    function (function () {<br>
-    &nbsp;&nbsp;body fleer = (l);<br>
-    &nbsp;&nbsp;system.out.println("anrinn");<br>
-    }
+  <div class="scanline"></div>
+  <div class="line-top"></div>
+  <div class="line-bottom"></div>
+
+  <!-- Corner brackets -->
+  <div class="corner tl"></div>
+  <div class="corner tr"></div>
+  <div class="corner bl"></div>
+  <div class="corner br"></div>
+
+  <!-- Data panels -->
+  <div class="panel p1">
+    <div class="label">System</div>
+    <span class="dot"></span>Web Design<br>
+    <span class="dot"></span>SEO Ready<br>
+    <span class="dot"></span>Mobile First
   </div>
 
-  <div class="code top-right">
-    &lt;!doctype html&gt;<br>
-    &lt;head&gt;<br>
-    &nbsp;&nbsp;&lt;meta type content "utf-81" /&gt;<br>
-    &nbsp;&nbsp;&lt;back around dann&lt;/body&gt;<br>
-    &lt;/head&gt;
+  <div class="panel p2">
+    <div class="label">Stack</div>
+    Next.js 15<br>
+    Supabase<br>
+    TypeScript
   </div>
 
-  <div class="code bottom-left">
-    function function (l) {<br>
-    &nbsp;&nbsp;body fizer = {()};<br>
-    &nbsp;&nbsp;system.out.println("ostrimt");<br>
-    }
+  <div class="panel p3">
+    <div class="label">Status</div>
+    <span class="dot"></span>Online<br>
+    <span class="dot"></span>PH Based<br>
+    <span class="dot"></span>Nationwide
   </div>
 
-  <div class="code bottom-right">
-    &lt;div class="at-en"&gt;<br>
-    &nbsp;&nbsp;&lt;meta class="conteinter"&gt;<br>
-    &nbsp;&nbsp;&lt;diva href="https:it Dann digital"&gt;&lt;/div&gt;<br>
-    &lt;/div&gt;
+  <div class="panel p4">
+    <div class="label">Services</div>
+    Business Sites<br>
+    Admin Dashboard<br>
+    Blog + CMS
   </div>
 
-  <!-- Side icons -->
-  <div class="icon left">⎇ →</div>
-  <div class="icon right">☁</div>
+  <!-- Circuit lines -->
+  <div class="circuit-left"></div>
+  <div class="circuit-right"></div>
+
+  <!-- Particles -->
+  <div class="particle" style="width:4px;height:4px;top:120px;left:400px;opacity:0.8"></div>
+  <div class="particle" style="width:3px;height:3px;top:200px;left:700px;opacity:0.5"></div>
+  <div class="particle" style="width:5px;height:5px;top:80px;right:350px;opacity:0.7"></div>
+  <div class="particle" style="width:3px;height:3px;bottom:150px;left:500px;opacity:0.6"></div>
+  <div class="particle" style="width:4px;height:4px;bottom:100px;right:450px;opacity:0.8"></div>
+  <div class="particle" style="width:2px;height:2px;top:300px;left:250px;opacity:0.4"></div>
+  <div class="particle" style="width:3px;height:3px;top:180px;right:600px;opacity:0.6"></div>
 
   <!-- Main logo -->
   <div class="center">
@@ -136,8 +352,16 @@
       <span class="brand">Dann digital</span>
       <span class="bracket">/&gt;</span>
     </div>
+    <div class="tagline">Professional Websites for Filipino Businesses</div>
   </div>
 
-  <div class="sparkle">✦</div>
+  <!-- Status bar -->
+  <div class="status">
+    <span>Est. 2025</span>
+    <span>//</span>
+    <span>Baguio City, PH</span>
+    <span>//</span>
+    <span>danndigital.com</span>
+  </div>
 </body>
 </html>
