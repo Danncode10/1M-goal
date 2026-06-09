@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 1640px;
+    height: 624px;
+    background-color: #0A1628;
+    font-family: 'Courier New', monospace;
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* Grid dots background */
+  .grid {
+    position: absolute;
+    inset: 0;
+    background-image:
+      radial-gradient(circle, #1e3a5f 1px, transparent 1px);
+    background-size: 40px 40px;
+    opacity: 0.4;
+  }
+
+  /* Code snippets background */
+  .code {
+    position: absolute;
+    color: #1e4a8a;
+    font-size: 13px;
+    line-height: 1.8;
+    opacity: 0.6;
+    user-select: none;
+  }
+  .code.top-left { top: 30px; left: 60px; }
+  .code.top-right { top: 20px; right: 80px; }
+  .code.bottom-left { bottom: 40px; left: 60px; }
+  .code.bottom-right { bottom: 50px; right: 120px; }
+
+  /* Icons */
+  .icon {
+    position: absolute;
+    color: #1e6fd4;
+    font-size: 32px;
+    opacity: 0.8;
+  }
+  .icon.left { top: 50%; left: 80px; transform: translateY(-50%); }
+  .icon.right { top: 50%; right: 90px; transform: translateY(-50%); }
+
+  /* Main logo */
+  .center {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 0;
+  }
+
+  .bracket {
+    color: #1e6fd4;
+    font-size: 96px;
+    font-weight: 900;
+    font-family: 'Arial Black', sans-serif;
+    line-height: 1;
+  }
+
+  .brand {
+    font-size: 88px;
+    font-weight: 900;
+    font-family: 'Arial Black', 'Impact', sans-serif;
+    color: #ffffff;
+    letter-spacing: -2px;
+    line-height: 1;
+    padding: 0 8px;
+  }
+
+  /* Diamond sparkle */
+  .sparkle {
+    position: absolute;
+    bottom: 30px;
+    right: 40px;
+    color: #ffffff;
+    font-size: 20px;
+    opacity: 0.7;
+  }
+</style>
+</head>
+<body>
+  <div class="grid"></div>
+
+  <!-- Background code snippets -->
+  <div class="code top-left">
+    function (function () {<br>
+    &nbsp;&nbsp;body fleer = (l);<br>
+    &nbsp;&nbsp;system.out.println("anrinn");<br>
+    }
+  </div>
+
+  <div class="code top-right">
+    &lt;!doctype html&gt;<br>
+    &lt;head&gt;<br>
+    &nbsp;&nbsp;&lt;meta type content "utf-81" /&gt;<br>
+    &nbsp;&nbsp;&lt;back around dann&lt;/body&gt;<br>
+    &lt;/head&gt;
+  </div>
+
+  <div class="code bottom-left">
+    function function (l) {<br>
+    &nbsp;&nbsp;body fizer = {()};<br>
+    &nbsp;&nbsp;system.out.println("ostrimt");<br>
+    }
+  </div>
+
+  <div class="code bottom-right">
+    &lt;div class="at-en"&gt;<br>
+    &nbsp;&nbsp;&lt;meta class="conteinter"&gt;<br>
+    &nbsp;&nbsp;&lt;diva href="https:it Dann digital"&gt;&lt;/div&gt;<br>
+    &lt;/div&gt;
+  </div>
+
+  <!-- Side icons -->
+  <div class="icon left">⎇ →</div>
+  <div class="icon right">☁</div>
+
+  <!-- Main logo -->
+  <div class="center">
+    <div class="logo">
+      <span class="bracket">&lt;/</span>
+      <span class="brand">Dann digital</span>
+      <span class="bracket">/&gt;</span>
+    </div>
+  </div>
+
+  <div class="sparkle">✦</div>
+</body>
+</html>
