@@ -106,20 +106,50 @@ Secondary: LinkedIn, Reddit, YouTube Shorts
 - Filipino audience is massive on TikTok
 - Cross-post every TikTok to Facebook Reels for double reach
 
-### Content Ideas That Go Viral
+---
+
+### No Face. No Voice. No Problem.
+You don't need to show your face or use your voice. This style is trending and performs well.
+
+**The Format: Screen Record + Text Overlays + Music**
+- Record your screen while coding or building a website
+- Add text overlays to tell the story (no talking needed)
+- Add trending Filipino/chill background music
+- Add captions explaining what's happening
+- Result: satisfying, watchable, shareable — zero self-exposure
+
+**Tools (All Free)**
+| Tool | Purpose |
+|---|---|
+| **CapCut** | Edit videos, add text, music, effects — most PH creators use this |
+| **OBS Studio** | Screen recorder for coding/building sessions |
+| **TikTok app** | Built-in text-to-speech if a "voice" is needed |
+
+**Text-Only Storytelling (No Screen Needed)**
+Just aesthetic dark background + text that tells your story + music. Example:
+> *"I'm an OJT student from Nueva Vizcaya"*
+> *"I have ₱0 budget"*
+> *"I'm building a web business anyway"*
+> *"Follow the journey"*
+These go viral constantly. No face. No voice. Just words and the right music.
+
+---
+
+### Content Ideas That Work Without Face or Voice
 | Video Type | Example |
 |---|---|
-| Speed build | "I built a full business website in 2 hours" (screen record + music) |
-| React/roast | "Reacting to bad Filipino business websites" |
-| Tutorial | "How to appear on Google Maps for free" |
-| Story | "I'm an OJT student building a web business from Baguio" |
-| Transformation | "Before and after — I redesigned this Baguio restaurant's website" |
-| Money talk | "How much does a website cost in the Philippines?" |
-| Local angle | "Why Baguio businesses need websites NOW" |
+| Speed build | "I built a full business website in 2 hours" (screen timelapse + music) |
+| React/roast | "Reacting to bad Filipino business websites" (screen share + text) |
+| Tutorial | "How to appear on Google Maps for free" (screen steps + text) |
+| Story | "OJT student from NV building a web business" (text-only + music) |
+| Transformation | "Before and after — Baguio restaurant website redesign" (screenshots) |
+| Money talk | "How much does a website cost in the Philippines?" (text slides) |
+| Local angle | "Why Baguio businesses need websites NOW" (text + local footage) |
+| Day in the life | "Day 1 of building DannDigital with ₱0" (text storytelling) |
 
-### TikTok Setup Tips
+### TikTok Setup
 - Username: @danndigital
-- Bio: "Web dev from Baguio 🌲 | Building websites for Filipino businesses | DM for free mockup"
+- Bio: "Web dev from Baguio | Building websites for Filipino businesses | DM for free mockup"
 - Post at: 7-9am, 12-1pm, or 7-10pm Philippine time
 - Use trending Filipino sounds/music
 - Add captions — most people watch without sound
@@ -127,6 +157,19 @@ Secondary: LinkedIn, Reddit, YouTube Shorts
 
 ### Hashtags to Use
 \#WebDesignPhilippines \#NegosyoPH \#FilipinoBusiness \#WebDevPH \#BaguioCity \#SupportLocalPH \#TechPH \#FreelancerPH
+
+---
+
+### Cross-Posting TikTok → Facebook Reels
+Never share the TikTok link directly — Facebook buries it to keep users on-platform.
+
+**Correct workflow:**
+1. Post on TikTok first
+2. Download your video **without the watermark** using **SnapTik.app** (free)
+3. Upload the clean version to **Facebook Reels** manually
+4. Same caption, same hashtags — double the reach, zero extra work
+
+**Why remove the watermark?** Facebook's algorithm actively suppresses videos with TikTok watermarks. Always upload clean.
 
 ---
 
@@ -179,6 +222,39 @@ Secondary: LinkedIn, Reddit, YouTube Shorts
 - YouTube content gets indexed by Google — double SEO benefit
 - Long-term: Turn Shorts into full tutorials (10-15 min) for authority building
 - Channel name: DannDigital
+
+---
+
+## Blog → Facebook Strategy
+Always share blog posts to Facebook — but do it the right way or Facebook buries it.
+
+### Wrong Way (Facebook Suppresses This)
+> "New blog post! Check it out: [link]"
+Facebook kills reach on posts with external links.
+
+### Right Way
+1. Copy the key insight from the blog post
+2. Write it as a **native Facebook post** — full value, no link in the post body
+3. Put the blog link in the **first comment**
+4. End the post with: *"Full guide in the comments"*
+
+**Example:**
+> **Post body:** *"3 reasons your Baguio restaurant is losing customers to competitors with websites:*
+> *1. Customers Google you first — if you're not there, they go elsewhere*
+> *2. No website = no trust for new customers*
+> *3. Your competitor 2 streets away already has one*
+> *Save this if you own a small business."*
+>
+> **First comment:** *"I wrote a full guide on this — link in the comments: [blog link]"*
+
+### Blog Post Ideas to Write (and Repurpose as FB Posts + TikToks)
+- "5 Reasons Your Negosyo Needs a Website in 2025"
+- "Magkano ang Website para sa Maliit na Negosyo sa Pilipinas"
+- "How to Get Your Business Found on Google for Free"
+- "Web Design Tips para sa mga Negosyante sa Baguio"
+- "Why Filipino Businesses Lose Customers Without a Website"
+
+Each blog post = 1 Facebook post + 1 TikTok + 1 LinkedIn post. One piece of content, three platforms.
 
 ---
 
