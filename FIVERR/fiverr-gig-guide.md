@@ -156,4 +156,7 @@ A: Yes! Message me before ordering and I'll send a custom offer.
 
 **Q: Do you offer revisions?**
 A: Yes — each package includes revisions (see pricing). I want you to be 100% happy with the result.
+
+**Q: Is a domain name included?**
+A: Yes! A free domain for the first year is included in all packages. I'll register it in your name so you fully own it. After year 1, renewal is approximately $10–15/year — I'll remind you before it expires so your site never goes down.
 ```
