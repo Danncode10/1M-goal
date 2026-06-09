@@ -107,7 +107,7 @@ No. Everything is custom-coded with Next.js and Tailwind CSS — no drag-and-dro
 Your business name, logo (if you have one), brand colors, the services you offer, and any text or images you want on the site. I'll guide you through everything.
 
 **Q3: Is the website already deployed when I receive it?**
-Yes. Your site will be live on your domain when I deliver. If you don't have a domain yet, I'll register and manage it for you for $50/year — that covers registration, DNS setup, and annual renewal handling so you never have to worry about it.
+Yes. Your site will be live on your domain when I deliver. Domain registration for the first year is included in your package at no extra cost. From year 2 onwards, I'll handle all renewals and DNS management for $50/year so you never have to worry about it.
 
 **Q4: Can you add AI features like a chatbot or automation?**
 Yes! I integrate OpenAI APIs — chatbots, smart search, and automation tools. Message me before ordering and I'll send a custom offer.
@@ -119,7 +119,7 @@ Revisions cover content and design changes — text, colors, images, layout twea
 A full business management system — track bookings and record sales (POS), view analytics and performance trends, manage leads, write blog posts with SEO controls, and update your services and prices anytime. No coding needed, all from one dashboard you log into.
 
 **Q7: How much does a domain name cost?**
-If you already have a domain, I'll connect it for free. If you don't have one yet, I offer domain registration and management for $50/year — I handle everything: registration, DNS setup, and yearly renewal. You own the domain, I just take care of the technical side for you.
+If you already have a domain, I'll connect it for free. If you don't have one yet, domain registration for the first year is included in your package — no extra charge. From year 2 onwards, I offer domain renewal and management for $50/year. I handle everything: DNS, renewals, and keeping your site live. You own the domain, I just take care of the technical side.
 
 ---
 
@@ -130,8 +130,8 @@ Fiverr's 2 default questions — leave as is.
 **Q1** (Free text) — What is your business name and what does your business do?
 **Q2** (Attachment) — Please upload your logo here. (PNG or SVG preferred)
 **Q3** (Free text) — What are your brand colors? Share hex codes or describe the style (e.g. "dark and professional", "bright and modern").
-**Q4** (Free text) — Do you already have a domain name? If yes, what is it? If no, I can register and manage it for you for $50/year.
-**Q5** (Free text) — Please share any content for the site — services, about text, photos, pricing, etc. (You can send as files or text.)
+**Q4** (Free text) — Do you already have a domain name? If yes, what is it? If no, domain registration is included free for the first year — just tell me your preferred domain name.
+**Q5** (Free text) — Please share all content for the site: business description, services offered, pricing, photos, business address/location, contact number, email, social media links, and any other details you want on the site. (You can send as files or text.)
 **Q6** (Free text) — Is there a website you like the look of? Share a link for reference.
 
 ---
@@ -139,7 +139,9 @@ Fiverr's 2 default questions — leave as is.
 ## Domain Name Policy
 
 - Client has domain → connect it for free
-- Client has no domain → register + manage via Namecheap for **$50/year** (billed annually)
-  - Actual cost to you: ~$11/year → profit ~$38/year per client
-  - Covers: registration, DNS setup, renewal, and keeping it pointed to their Vercel deployment
+- Client has no domain →
+  - **Year 1: FREE** — included in package price (cost to you: ~$11 via Namecheap)
+  - **Year 2+: $50/year** — billed annually, covers renewal, DNS, and keeping site live
+  - Profit from year 2: ~$39/year per client (passive recurring income)
 - Remind client 30 days before expiry each year
+- Always register domain in client's name (they own it, you manage it)
